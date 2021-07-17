@@ -1,0 +1,8 @@
+$title-color: rgba(54, 56, 56, 0.9033);
+
+%title-font {
+  font-family: Montserrat Bold, sans-serif;
+  font-weight: 700;
+  color: $title-color;
+  line-height: 22px;
+}
