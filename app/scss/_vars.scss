@@ -1,8 +1,9 @@
-$title-color: rgba(54, 56, 56, 0.9033);
+$primary-black:#363838;
+$default: #5A5A5A;
 
 %title-font {
   font-family: Montserrat Bold, sans-serif;
   font-weight: 700;
-  color: $title-color;
+  color: $primary-black;
   line-height: 22px;
 }
