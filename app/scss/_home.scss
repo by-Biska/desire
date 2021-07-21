@@ -1,3 +1,12 @@
 .top {
-  
+  &__slider-item {
+    // display: flex;
+  }
+
+  &__slider-title{
+    @extend %title-font;
+    font-size: 110px;
+    line-height: 134px;
+  }
+  &__slider-text
 }
