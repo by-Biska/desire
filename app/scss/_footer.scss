@@ -83,7 +83,7 @@
     position: relative;
     &::before {
       content: "";
-      background-image: url(/app/img/footer/envelope.svg);
+      background-image: url(../img/footer/envelope.svg);
       position: absolute;
       width: 16px;
       height: 16px;
@@ -92,25 +92,25 @@
     }
   }
   &__social-link--facebook::before {
-    background-image: url(/app/img/footer/facebook.svg);
+    background-image: url(../img/footer/facebook.svg);
   }
   &__social-link--instagram::before {
-    background-image: url(/app/img/footer/instagram.svg);
+    background-image: url(../img/footer/instagram.svg);
     width: 14px;
     height: 14px;
     top: 1px;
   }
   &__social-link--pinterest::before {
-    background-image: url(/app/img/footer/pinterest.svg);
+    background-image: url(../img/footer/pinterest.svg);
   }
   &__social-link--whatsapp::before {
-    background-image: url(/app/img/footer/whatsapp.svg);
+    background-image: url(../img/footer/whatsapp.svg);
     width: 14px;
     height: 14px;
     top: 1px;
   }
   &__social-link--youtube::before {
-    background-image: url(/app/img/footer/youtube.svg);
+    background-image: url(../img/footer/youtube.svg);
     width: 18px;
     height: 12px;
     top: 2px;
