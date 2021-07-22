@@ -91,9 +91,9 @@
 
   &__item {
     position: relative;
-    
-    &:hover{
-      .collection__info{
+
+    &:hover {
+      .collection__info {
         opacity: 1;
       }
     }
@@ -116,7 +116,7 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   &__info-title {
@@ -144,5 +144,35 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 28px;
+  }
+}
+
+.decor {
+  padding: 170px 0 155px;
+  background-image: url(/app/img/home/decor-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    @extend %title-font;
+    max-width: 730px;
+    font-size: 60px;
+    line-height: 80px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 200px;
+      bottom: 0;
+      left: 0;
+      background: #6D7278;
+    }
+  }
+
+  &__text {
+    max-width: 540px;
   }
 }
