@@ -1,9 +1,9 @@
 .top {
-  &__inner{
+  &__inner {
     padding-bottom: 70px;
     position: relative;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       background-image: url(/app/img/slider-bg.jpg);
       width: 100%;
@@ -19,38 +19,130 @@
     align-items: center;
   }
 
-  &__slider-img{
+  &__slider-img {
     margin-left: -14%;
     max-width: 703px;
     height: 815px;
     object-fit: cover;
   }
 
-  &__slider-info{
+  &__slider-info {
     margin-left: 25px;
-    max-width: 635px
+    max-width: 635px;
   }
 
-  &__slider-title{
+  &__slider-title {
     @extend %title-font;
     font-size: 110px;
     line-height: 134px;
     padding-bottom: 26px;
     margin-bottom: 26px;
     position: relative;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       left: 0;
       bottom: 0;
       width: 185px;
       height: 1px;
-      background-color: #6D7278;
+      background-color: #6d7278;
     }
   }
 
-  &__slider-text{
+  &__slider-text {
     max-width: 585px;
   }
+}
 
+.new-collection {
+  text-align: center;
+  margin: 46px 0 104px;
+
+  &__title {
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 51px;
+    padding-bottom: 25px;
+    margin-bottom: 24px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background: #6d7278;
+    }
+  }
+
+  &__text {
+    max-width: 730px;
+    margin: 0 auto 30px;
+  }
+}
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+
+  &__item {
+    position: relative;
+    
+    &:hover{
+      .collection__info{
+        opacity: 1;
+      }
+    }
+  }
+  &__images {
+    min-height: 350px;
+    object-fit: cover;
+  }
+
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#fff, 0.6);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .3s;
+  }
+
+  &__info-title {
+    @extend %title-font;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 80%;
+      height: 1px;
+      background: #6d7278;
+      margin: 0 auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &__info-text {
+    font-family: "Open Sans Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+  }
 }
