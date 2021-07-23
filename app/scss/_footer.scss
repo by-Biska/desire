@@ -21,7 +21,7 @@
     margin-bottom: 16px;
   }
   &__info-email {
-    font-family: "Open Sans Semibold", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 28px;
@@ -51,7 +51,7 @@
     outline: none;
     border-radius: 21px;
     &::placeholder {
-      font-family: "Open Sans Regular", sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       font-style: 16px;
       line-height: 27px;
@@ -59,7 +59,7 @@
     }
   }
   &__form-button {
-    font-family: "Open Sans Semibold", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -117,7 +117,7 @@
   }
   &__social-item,
   &__menu-item {
-    font-family: "Open Sans Semibold", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 600;
     color: #707070;
