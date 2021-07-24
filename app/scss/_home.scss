@@ -56,7 +56,7 @@
 
 .new-collection {
   text-align: center;
-  margin: 46px 0 104px;
+  margin: 46px 0 35px;
 
   &__title {
     @extend %title-font;
@@ -88,6 +88,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
+  padding-bottom: 70px;
 
   &__item {
     position: relative;
