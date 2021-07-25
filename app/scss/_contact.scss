@@ -1,0 +1,117 @@
+.map {
+    margin-top: -53px;
+    margin-bottom: 55px;
+}
+
+.contact {
+    padding-bottom: 100px;
+    &__title {
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 60px;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 2px;
+            background: #6d7278;
+        }
+    }
+    .contact__social {
+        padding-left: 284px;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__social-item + .contact__social-item {
+        padding-left: 40px;
+    }
+    &__text {
+        margin-bottom: 10px;
+    }
+    &__city {
+        margin-bottom: 16px;
+    }
+    &__box {
+        padding-left: 284px;
+    }
+    &__form {
+        padding-left: 284px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__form-input {
+        border: 1px solid #dfdfdf;
+        border-radius: 20px;
+        width: 49%;
+        margin-bottom: 13px;
+        padding: 6px 17px;
+        
+    }
+    &__form-area {
+        border: 1px solid #dfdfdf;
+        border-radius: 24px;
+        width: 100%;
+        min-height: 125px;
+        padding: 14px 17px;
+        resize: none;
+        margin-bottom: 20px;
+        &::placeholder {
+            color: #a1a1a1;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+        }
+    }
+    &__form-btn {
+        font-weight: 600;
+        border-radius: 21px;
+        color: #FFFFF0;
+        background-color: $primary-black;
+        padding: 6px 60px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.contact-slider {
+    max-width: 1920px;
+	margin: 0 auto;
+	padding: 102px 10px;
+    &__link {
+        position: relative;
+        margin-bottom: 20px;
+        &:hover .contact-slider__title {
+            opacity: 1;
+        }
+    }
+    &__img {
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+    }
+    &__title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(#fff, .6);
+        @extend %title-font;
+        line-height: 22px;
+        padding: 0 5px;
+        text-align: center;
+        opacity: 0;
+        transition: all .3s;
+    }
+}

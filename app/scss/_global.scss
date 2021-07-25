@@ -4,7 +4,7 @@ body {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 27px;
@@ -26,10 +26,10 @@ body {
 	flex: 0 0 auto;
 }
 
-.container{
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .container-fluid {
@@ -38,18 +38,16 @@ body {
 	padding: 0 10px;
 }
 
-.slick-dots{
-    display: flex;
+.slick-dots {
+	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	li{
+	li {
 		padding: 0 15px;
-
-		
 	}
 
-	button{
+	button {
 		background-color: $primary-black;
 		border: none;
 		width: 8px;
@@ -60,33 +58,53 @@ body {
 		outline: none;
 	}
 
-	li.slick-active button{
-			background-color: #FFEF35;
-		}
+	li.slick-active button {
+		background-color: #ffef35;
+	}
 }
 
 .breadcrumbs {
-    background: rgba(#DFDFDF, .5);
-    padding: 13px 14px;
+	background: rgba(#dfdfdf, 0.5);
+	padding: 13px 14px;
+	position: relative;
+	z-index: 999;
 
-    &__list {
-        display: flex;
-    }
+	&__list {
+		display: flex;
+	}
 
-    &__item::after{
-        content: '/';
-        margin-left: -3px;
-        margin-right: 3px;
-    }
+	&__item::after {
+		content: "/";
+		margin-left: -3px;
+		margin-right: 3px;
+	}
 
-    &__item:last-child::after {
-        display: none;
-    }
+	&__item:last-child::after {
+		display: none;
+	}
 
-    &__link {
-        font-size: 14px;
-    }
+	&__link {
+		font-size: 14px;
+	}
 }
 
-
-
+.info-email {
+	font-family: "Open Sans", sans-serif;
+	color: $primary-black;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 28px;
+	margin-bottom: 22px;
+	padding-left: 30px;
+	display: inline-block;
+	position: relative;
+	&::before {
+		content: "";
+		background-image: url(../img/footer/envelope.svg);
+		position: absolute;
+		width: 16px;
+		height: 12px;
+		top: 8px;
+		left: 0;
+	}
+}
