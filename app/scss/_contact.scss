@@ -51,7 +51,13 @@
         width: 49%;
         margin-bottom: 13px;
         padding: 6px 17px;
-        
+        &::placeholder {
+            color: #a1a1a1;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+        }
     }
     &__form-area {
         border: 1px solid #dfdfdf;
