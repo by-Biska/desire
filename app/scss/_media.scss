@@ -22,6 +22,10 @@
             width: 100%;
         }
     }
+
+    .inspiration__images {
+        margin: 0 77px 0px 0;
+    }
 }
 
 @media (max-width: 992px) {
@@ -51,6 +55,17 @@
     .gallery__btn {
         margin: 2px;
         padding: 6px 10px;
+    }
+
+    .about__content {
+        padding: 40px 0;
+    }
+    .about__text {
+        padding-left: 0;
+    }
+
+    .inspiration__images {
+        display: none;
     }
 
     .footer__info {
@@ -102,6 +117,18 @@
     }
     .gallery__btn {
         margin-bottom: 10px;
+    }
+
+    .about__prev {
+        padding: 80px 0;
+    }
+    .partners__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .partners__item:nth-child(3),
+    .partners__item:nth-child(4),
+    .partners__item:nth-child(5) {
+        display: none;
     }
 
     .footer__inner {
@@ -265,6 +292,25 @@
     .blog-box__item-title {
         font-size: 22px;
         line-height: 32px;
+    }
+
+    .about__prev-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .inspiration__item-text {
+        margin-right: 10px;
+    }
+    .inspiration__item-text,
+    .inspiration_num {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .gallery.gallery-page .gallery__item:nth-child(8) {
+        grid-column: 1;
+        grid-row: 1;
     }
 
     .btn-up {
