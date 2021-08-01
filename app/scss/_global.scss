@@ -91,6 +91,16 @@ body {
 	}
 }
 
+.btn-up {
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	bottom: 40px;
+	right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
 .info-email {
 	font-family: "Open Sans", sans-serif;
 	color: $primary-black;

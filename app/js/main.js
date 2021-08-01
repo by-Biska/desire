@@ -20,6 +20,19 @@ $(function () {
     }
   });
 
+  $(window).scroll(function () { 
+    if($(this).scrollTop() > 400) {
+      $('.btn-up').fadeIn()
+    }else {
+      $('.btn-up').fadeOut()
+    }
+  });
+  $(document).ready(function(){
+    $('.btn-up').click(function(){
+      $('html ,body').animate({scrollTop : 0}, 800);
+    })
+  })
+
   $(".top__slider").slick({
     dots: true,
     arrows: false,
