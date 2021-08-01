@@ -10,7 +10,7 @@ body {
 	line-height: 27px;
 	color: $default;
 	overflow-x: hidden;
-	min-width: 320px;
+	min-width: 300px;
 }
 
 .wrapper {
@@ -71,12 +71,15 @@ body {
 
 	&__list {
 		display: flex;
+		overflow-x: auto;
 	}
-
+	&__item {
+		position: relative;
+		padding-right: 8px;
+	}
 	&__item::after {
 		content: "/";
-		margin-left: -3px;
-		margin-right: 3px;
+		position: absolute;
 	}
 
 	&__item:last-child::after {
