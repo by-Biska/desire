@@ -1,6 +1,9 @@
 .map {
     margin-top: -53px;
     margin-bottom: 55px;
+    iframe {
+        height: 578px;
+    }
 }
 
 .contact {
@@ -90,6 +93,7 @@
     max-width: 1920px;
 	margin: 0 auto;
 	padding: 102px 10px;
+    display: none;
     &__link {
         position: relative;
         margin-bottom: 20px;
@@ -110,7 +114,7 @@
         top: 0;
         width: 170px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background-color: rgba(#fff, .6);
         @extend %title-font;
